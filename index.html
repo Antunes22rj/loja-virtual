@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Bebel Store</title>
+</head>
+<body>
+
+    <div class="background">
+        <header>
+            <div class="logo">
+                <h1>Bebel Store</h1>
+            </div>
+
+          
+            <div class="icon"><span><ion-icon name="bag-outline"></ion-icon></span></div>
+        </header>
+
+        <div class="Meio">
+            <h1>Novos Modelos</h1>
+            <h1>Para Meninas</h1>
+            <P>Novas cores, agora também disponível no tamanho das Nossas baixinhas</P>
+            <button>Novas coleção</button>
+        </div>
+    </div>
+
+    <section id="roupas">
+        <button class="btn_default" onclick="abrirModal()">Adicionar Peça</button>
+
+    <section>
+
+        <h1>NOVAS ROUPAS</h1>
+        <div class="Container-card-1">
+            <div class="cards">
+                <img src="img/foto 1.webp">
+                <h1>Conjuntinho 2 em 1<br>
+                    Tamanho (P) (M) (G)<br>
+                    R$50<br>
+                    Conjunto Muito bom usa ai
+                </h1>
+            </div>
+
+            <div class="cards">
+                <img src="img/foto4.jfif">
+                <h1>Vestido Para Casamento<br>
+                    Tamanho (P) (M) (G)<br>
+                    R$50<br>
+                    Conjunto Muito bom usa ai
+                </h1>
+            </div>
+        </div>
+
+    </section>
+   
+    <div class="janela-modal" id="janela-modal">
+        <div class="modal">
+            <button class="fechar" id="fechar">X</button>
+            <div class="tittle">
+                <h1>Adicione uma Peça</h1>
+            </div>
+
+            <form id="formulario">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br>
+                <label for="imagem">Imagem:</label><br>
+                <input type="file" id="imagem" name="imagem"><br>
+                <label for="tamanho">Tamanho:</label><br>
+                <label for="P">P</label>
+                <input id="P" type="checkbox" value="P">
+
+                <label for="M">M</label>
+                <input id="M" type="checkbox" value="M">
+
+                <label for="G">G</label>
+                <input id="G" type="checkbox" value="G"><br>
+
+                <label for="valor">Valor:</label><br>
+                <input type="number" id="valor" name="valor"><br><br>
+
+                <label for="descriçao">Descrição:</label><br>
+                <textarea name="" id="descriçao"></textarea>
+                <button class="btn_default" type="button" onclick="criarCard()">Criar card</button>
+              </form>        
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
